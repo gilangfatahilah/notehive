@@ -9,14 +9,14 @@ export default function Home() {
           <div>
             <span className="w-auto px-6 py-3 rounded-full bg-secondary">
               <span className="text-sm font-medium text-primary">
-                Sort your note easily
+                Organize Your Thoughts Effortlessly
               </span>
             </span>
 
-            <h1 className="mt-8 text-gradient text-3xl font-extrabold tracking-tight lg:text-7xl">
-              Create notes with ease.
+            <h1 className="mt-8 pb-2 text-gradient text-3xl font-extrabold tracking-tight lg:text-7xl">
+              Where Ideas Flourish and Organization Thrives!
             </h1>
-            <p className="max-w-2xl mx-auto mt-8 text-base lg:text-xl text-secondary-foreground">
+            <p className="max-w-2xl mx-auto mt-6 text-base lg:text-xl text-secondary-foreground">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ea
               unde perspiciatis error iusto at natus voluptatem optio.
               Accusantium eaque harum quam sequi totam quas voluptate facilis
