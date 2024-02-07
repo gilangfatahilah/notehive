@@ -20,7 +20,7 @@ import {
 import prisma from "@/app/lib/db";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { Button } from "@/components/ui/button";
-import SubmitButton from "@/app/components/SubmitButton";
+import { SubmitButton } from "@/app/components/SubmitButton";
 import { revalidatePath } from "next/cache";
 
 const getData = async (userId: string) => {
