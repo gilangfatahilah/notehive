@@ -4,6 +4,7 @@ import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { redirect } from "next/navigation";
 import prisma from "../lib/db";
 import { stripe } from "../lib/stripe";
+import { unstable_noStore as noStore } from "next/cache";
 
 interface User {
   email: string;
@@ -20,6 +21,8 @@ const getData = async ({
   lastName,
   profileImage,
 }: User) => {
+  noStore();
+
   const user = await prisma.user.findUnique({
     where: {
       id: id,
