@@ -97,9 +97,12 @@ const DashboardPage = async () => {
               className="flex items-center justify-between p-4"
             >
               <div>
-                <h2 className="font-semibold text-xl text-primary">
+                <Link
+                  href={`/dashboard/view/${item.id}`}
+                  className="font-semibold text-xl text-primary hover:text-primary/80"
+                >
                   {item.title}
-                </h2>
+                </Link>
                 <p>
                   {Intl.DateTimeFormat("en-US", {
                     dateStyle: "full",
